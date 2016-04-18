@@ -585,7 +585,7 @@ Fortunately the definition is still sufficient for a general purpose episode min
 
 \subsection{Event Episodes}
 
-Given a high level event stream there are multiple ways to define episodes of events. We will give two different definitions, first a very compact and formal definition and second a longer definition that is a bit more clear and less formal.
+Given an annotated stream there are multiple ways to define episodes of events. We will give two different definitions, first a very compact and formal definition and second a longer definition that is a bit more clear and less formal.
 
 \begin{mydef}
 \textbf{Episode} An event episode $E$ of length $m$ (also called m-Episode) is defined as a triple: $E = (N_E,{\leq}_{E},g_E)$ where $N_E = \{n_1,...,n_m\}$ is a set of nodes, ${\leq}_{E}$ is a partial order over $N_E$ and $g_E : V_E \rightarrow \Sigma$ is a mapping that maps each node of $N_E$ to an event type. If ${\leq}_{E}$ is a total order we call $E$ a serial episode, if there is no ordering at all we call $E$ a parallel episode. Otherwise we speak of composite episodes.
